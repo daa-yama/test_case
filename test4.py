@@ -160,10 +160,10 @@ check_even_odd(16)
 # と表示する関数 check_temperature を作ってください。
 # 	•	関数定義は7行以内（条件分岐が3パターンあるため）、呼び出しは1行。
 def check_temperature(tem):
-    if tem >= 30:
-        print("暑いです")
-    elif tem < 15:
-        print("寒いです")
-    else:
-        print("ちょうどいいです")
+        if tem >= 30:
+            print("暑いです")
+        elif tem < 15:
+            print("寒いです")
+        else:
+            print("ちょうどいいです")
 check_temperature(15)
