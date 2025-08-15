@@ -1,5 +1,12 @@
-names = ["たろう", "はなこ", "じろう"] 
-def add_name(new_name) :
-    names.append(new_name)
+# 次のリストがあります。
+# names = ["たろう", "はなこ", "じろう"]
+# 新しい名前を引数として受け取り、リストに追加する関数 add_name(new_name) を作ってください。
+# 関数を使って "さぶろう" を追加した後、リストの中身をすべて表示してください。
+
+names = ["たろう", "はなこ", "じろう"]#グローバル変数で関数の外からでも変更できるようにする。 
+def add_name(new_name):
+    names.append(new_name)#グローバル変数に追加する.append関数を入れている。 
 add_name("さぶろう")
+add_name("しろう")
 print(names)
+    
