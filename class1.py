@@ -159,13 +159,13 @@ print(uppercase_message)
 #    2 三角形の面積: 15.0
 class AreaCalculator:
     def rectangle(self, width, height):
-        result = width * height
-        return result
+        rectangle_area = width * height
+        return rectangle_area
     def triangle(self, base, height): 
-        result = base * height / 2
-        return result
+        triangle_area = base * height / 2
+        return triangle_area
 my_calc = AreaCalculator()
-rectangle_result = my_calc.rectangle(2, 2)
-triangle_result = my_calc.triangle(3, 3)
+rectangle_result = my_calc.rectangle(9, 2)
+triangle_result = my_calc.triangle(3, 6)
 print(rectangle_result)
 print(triangle_result)
