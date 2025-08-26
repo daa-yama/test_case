@@ -8,13 +8,18 @@ class StringHandler:
     def upper_text(self, text):
         upper_case = text.upper() 
         return upper_case
+    
     def repeat_text(self, text):
         repetition = text * 2
         return repetition
+    
 my_string = StringHandler()
+
 text = "hello python"
+
 upper_text_result = my_string.upper_text(text)
 repeat_text_result = my_string.repeat_text(text)
+
 print(upper_text_result)
 print(repeat_text_result)
 
