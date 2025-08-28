@@ -121,3 +121,26 @@ my_book.show_pages()
 # 	•	500円入金する。
 # 	•	2000円引き出そうとする。
 # 	•	最後に残高を表示する。
+class BankAccount:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.balance = balance
+        
+    def deposit(self, amount):
+        self.balance += amount
+        
+    def withdraw(self, amount):
+        if self.balance >= amount:
+            self.balance -= amount
+        else:   
+            print("「残高が不足です」")
+            
+    def show_balance(self):
+        print(f"「{self.owner}さんの残高は{self.balance}円です」")
+        
+my_bank = BankAccount("たろう", 1000)
+my_bank.deposit(500)
+my_bank.withdraw(2000)
+my_bank.show_balance()
+my_bank.withdraw(200)
+my_bank.show_balance()
