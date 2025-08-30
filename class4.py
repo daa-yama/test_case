@@ -5,7 +5,7 @@
 # ・show_stock() メソッドで 「〇〇の在庫は△△個です」と表示する
 # インスタンスを作成し、在庫を追加して表示してください。
 class Product:
-    def __init__(self, name, stock):
+    def __init__(self,name, stock):
         # コンストラクタ　インスタンス初期化メソッド
         
         self.name = name
